@@ -1,0 +1,165 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry</title>
+    {% comment %}
+    <link rel="stylesheet" href="laudri.css"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'laudri.css' %}">
+</head>
+
+<body>
+    <div>
+        <h1>
+            <center> Laundry </center>
+
+        </h1>
+
+        <form class="request" method="POST" action="\laundary_page">
+            {%csrf_token%}
+            <table id="table">
+                <tr>
+                    <th>Name</th>
+                    <td colspan="2"><input type="text" name="name" style="width:99% ;"></td>
+
+
+                </tr>
+                <tr>
+                    <th>Adm.No.</th>
+                    <td colspan="2"><input type="text" name="admn" style="width:99% ;"></td>
+
+                </tr>
+
+                <tr>
+                    <th>S.No.</th>
+                    <th>Laundry Item</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align:center ;">1.</td>
+                    <td>Pant</td>
+
+                    <td id="inputp"><input type="number" name="inputp"></td>
+
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">2.</td>
+                    <td>JEANS</td>
+                    <td id="inputj"><input type="number" name="inputj"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">3.</td>
+                    <td>SHIRT</td>
+                    <td id="inputs"><input type="number" name="inputs"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">4.</td>
+                    <td>T-SHIRT</td>
+                    <td id="inputt"><input type="number" name="inputt"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">5.</td>
+                    <td>KURTA</td>
+                    <td id="inputk"><input type="number" name="inputk"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">6.</td>
+                    <td>PYJAMAS</td>
+                    <td id="inputpy"><input type="number" name="inputpy"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">7.</td>
+                    <td>TRACK PANT</td>
+                    <td id="inputtp"><input type="number" name="inputtp"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">8.</td>
+                    <td>SHORTS</td>
+                    <td id="inputsho"><input type="number" name="inputsho"></td>
+
+
+                <tr>
+                    <td style="text-align:center ;">9.</td>
+                    <td>UNDERGARMENT</td>
+                    <td id="inputun"><input type="number" name="inputun"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">10.</td>
+                    <td>BOXER</td>
+                    <td id="inputb"><input type="number" name="inputb"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">11.</td>
+                    <td>SOCKS PAIR</td>
+                    <td id="inputsp"><input type="number" name="inputsp"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">12.</td>
+                    <td>BED SHEET</td>
+                    <td id="inputbs"><input type="number" name="inputbs"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">13.</td>
+                    <td>PILLOW COVER</td>
+                    <td id="inputpc"><input type="number" name="inputpc"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">14.</td>
+                    <td>HAND TOWEL</td>
+                    <td id="inputht"><input type="number" name="inputht"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">15.</td>
+                    <td>HANDKERCHEIF</td>
+                    <td id="inputhc"><input type="number" name="inputhc"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">16.</td>
+                    <td>BATH TOWEL</td>
+                    <td id="inputbt"><input type="number" name="inputbt"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;">17.</td>
+                    <td>OTHER</td>
+                    <td id="inputo"><input type="number" name="inputo"></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center ;"></td>
+                    <td>TOTAL</td>
+                    </td>
+                    <td id="ttl"><input type="number" name="ttl"></td>
+                </tr>
+            </table>
+            <br>
+
+            <tr>
+                <td><input id="submit" type="submit"></td>
+            </tr>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
